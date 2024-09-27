@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quang Huynh</title>
+    <link rel="icon" type="/x-icon" href="static/logo/favicon.ico">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="https://www.quanghuynh.net">Quang Huynh</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Quang Huynh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hi there 👋 I'm</p>
+        <h1 class="title">Quang Huynh</h1>
+        <p class="section__text__p2">RIT Student</p>
+        <div class="section__pic-container">
+          <img src="assets/quang.png" alt="Quang Huynh" />
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/QuangHuynh_Feb2024.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+          src="assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/quangshuynh'"
+          />
+          <img
+            src="assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/quangs/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container2">
+          <img
+            src="assets/about-pic1.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <a target="_blank" href="http://www.rit.edu">
+                <img
+                  src="assets/rit_logo.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+              </a>
+              <h3>Education</h3>
+              <p><b style="color:#F76902;">Rochester Institute of Technology</b><br/>B.S. in Computer Science<br/>Expected May 2028</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am currently a first-year student at Rochester Institute of Technology studying Computer Science. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container"> <!--languages-->
+            <h2 class="skills-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/html_logo.png"
+                  alt="HTML icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/css_logo.png"
+                  alt="CSS icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/javascript_logo.png"
+                  alt="JavaScript icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/python_logo.png"
+                  alt="Python icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/java_logo.png"
+                  alt="Java icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/ruby_logo.png"
+                  alt="Ruby icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ruby on Rails</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container"> <!--frameworks-->
+            <h2 class="skills-sub-title">Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/react_logo.png"
+                  alt="React icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/nodejs_logo.png"
+                  alt="Node icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/expressjs_logo.png"
+                  alt="Express icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express.js</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/git_logo.png"
+                  alt="Git icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">   <!--development-->
+            <h2 class="skills-sub-title">Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="assets/pycharm_logo.png"
+                  alt="PyCharm icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyCharm</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/intellij_logo.png"
+                  alt="IntelliJ Idea icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>IntelliJ Idea</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/vs_logo.png"
+                  alt="Visual Studio Code icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VS Code</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/replit_logo.png"
+                  alt="Replit icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Replit</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="assets/github_logo.png"
+                  alt="Github icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/history_of_cs.png"
+                alt="History of CS"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">History of CS</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/quangshuynh/History-of-CS'"
+              >
+                Github
+              </button>
+              <img
+                  src="assets/html_logo.png"
+                  alt="HTML icon"
+                  class="icon"
+                />
+                <img
+                  src="assets/css_logo.png"
+                  alt="CSS icon"
+                  class="icon"
+                />
+                <img
+                  src="assets/javascript_logo.png"
+                  alt="JavaScript icon"
+                  class="icon"
+                />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/text-based-minecraft1.png"
+                alt="Text-based Minecraft"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Text-Based Minecraft</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/quangshuynh/Text-Based-Minecraft'"
+              >
+                Github
+              </button>
+              <img
+                  src="assets/python_logo.png"
+                  alt="Python icon"
+                  class="icon"
+                />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/zingleborg.png"
+                alt="Zingleborg"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Text-Based Story Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/quangshuynh/Zingleborg'"
+              >
+                Github
+              </button>
+              <img
+                  src="assets/ruby_logo.png"
+                  alt="Ruby icon"
+                  class="icon"
+                />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/automated_downloads_organizer.png"
+                alt="Automated Downloads Organizer"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Automated Downloads Organizer</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/quangshuynh/Python-Desktop-Cleaner'"
+              >
+                Github
+              </button>
+              <img
+                  src="assets/python_logo.png"
+                  alt="Python icon"
+                  class="icon"
+                />
+              </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/disappearing-act-game.png"
+                alt="Aim Trainer Game"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Aim Trainer Game</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/quangshuynh/Disappearing-Act-Game'"
+              >
+                Github
+              </button>
+              <img
+                  src="assets/html_logo.png"
+                  alt="HTML icon"
+                  class="icon"
+                />
+                <img
+                  src="assets/css_logo.png"
+                  alt="CSS icon"
+                  class="icon"
+                />
+                <img
+                  src="assets/javascript_logo.png"
+                  alt="JavaScript icon"
+                  class="icon"
+                />
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://t3.ftcdn.net/jpg/03/44/17/18/360_F_344171869_h3nxznW93zBoOLuMeIJ3Q3xzanFSN8vu.jpg"
+                alt="Car Price Predictor"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Car Price Predictor</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/quangshuynh/car-prices-prediction'"
+              >
+                Github
+              </button>
+              <img
+                  src="assets/python_logo.png"
+                  alt="Python icon"
+                  class="icon"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:qth9368@rit.edu">qth9368@rit.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/quangs" target="_blank">Connect with me!</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="assets/instagram_logo.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/quangalangs" target="_blank">Follow me!</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Quang Huynh</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
